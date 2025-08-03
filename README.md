@@ -48,7 +48,7 @@ Screenshots are captured on test failure using a custom `ScreenshotUtil.java` an
 ---
 
 ## 📁 Project Structure
-
+```bash
 EventManagementAutomation/               # Project Root
 │
 ├── src/
@@ -108,7 +108,7 @@ EventManagementAutomation/               # Project Root
 ├── Screenshots/                            # Capture screenshots on failure
 │       └── Invalid_Email.png      
 ├── automation_log.log                      # Log file for execution tracking
-
+```
 
 
 ---
@@ -125,6 +125,7 @@ EventManagementAutomation/               # Project Root
    mvn clean test
 
 🧪 Sample Test Scenarios Covered
+```bash
 >Booking form with all fields blank (negative)
 
 >Invalid email and phone number validations
@@ -134,7 +135,7 @@ EventManagementAutomation/               # Project Root
 >Contact Us page error validation
 
 >Confirmation message verification
-
+```
 
 🙋‍♀️ Author
 Asiya
