@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Sprint2_UIAutomation_Suite" verbose="1" parallel="false">
+	
+    <listeners>
+        <listener class-name="listerners.ExtentReportListener" />
+    </listeners>
+
+    <test name="Cucumber Runner Execution">
+        <classes>
+            <class name="runner.CucumberTestRunner"/>
+        </classes>
+    </test>
+
+</suite>

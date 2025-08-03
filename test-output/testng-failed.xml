@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Sprint2_UIAutomation_Suite]">
+  <listeners>
+    <listener class-name="listerners.ExtentReportListener"/>
+  </listeners>
+  <test thread-count="5" name="Cucumber Runner Execution(failed)">
+    <classes>
+      <class name="runner.CucumberTestRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="1 2 4"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- runner.CucumberTestRunner -->
+    </classes>
+  </test> <!-- Cucumber Runner Execution(failed) -->
+</suite> <!-- Failed suite [Sprint2_UIAutomation_Suite] -->

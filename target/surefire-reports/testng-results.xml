@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="3" failed="3" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-07-30T18:36:56 IST" name="Sprint2_UIAutomation_Suite" finished-at="2025-07-30T18:37:19 IST" duration-ms="23566">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.CucumberTestRunner@55182842]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2025-07-30T18:36:56 IST" name="Cucumber Runner Execution" finished-at="2025-07-30T18:37:19 IST" duration-ms="23566">
+      <class name="runner.CucumberTestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.CucumberTestRunner@55182842]" started-at="2025-07-30T18:36:56 IST" name="setUpClass" finished-at="2025-07-30T18:36:57 IST" duration-ms="612" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@68f9e807]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.CucumberTestRunner@55182842]" started-at="2025-07-30T18:36:57 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-30T18:37:13 IST" duration-ms="16336" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["submit Booking form with all fields blank"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Booking Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.CucumberTestRunner@55182842]" started-at="2025-07-30T18:37:13 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-30T18:37:15 IST" duration-ms="1772" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Enter invalid email in Email ID field"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Booking Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Expected error message for invalid email in bookingPage, but none was displayed. expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Expected error message for invalid email in bookingPage, but none was displayed. expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertFalse(Assert.java:79)
+at stepdefinitions.BookingSteps.should_display_invalid_email_error_message(BookingSteps.java:125)
+at ✽.should display invalid email error message(file:///C:/Users/DELL/eclipse-workspace/EventManagementAutomation/src/test/resources/features/Booking.feature:17)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.CucumberTestRunner@55182842]" started-at="2025-07-30T18:37:15 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-30T18:37:16 IST" duration-ms="1427" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Enter non numeric phone number"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Booking Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Expected error message for non-numeric phone no, but none was displayed. expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Expected error message for non-numeric phone no, but none was displayed. expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertFalse(Assert.java:79)
+at stepdefinitions.BookingSteps.should_display_invalid_phoneno_error_message(BookingSteps.java:159)
+at ✽.should display invalid phoneno error message(file:///C:/Users/DELL/eclipse-workspace/EventManagementAutomation/src/test/resources/features/Booking.feature:22)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.CucumberTestRunner@55182842]" started-at="2025-07-30T18:37:16 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-30T18:37:18 IST" duration-ms="1615" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Submit valid booking details"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Booking Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.CucumberTestRunner@55182842]" started-at="2025-07-30T18:37:18 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-30T18:37:19 IST" duration-ms="732" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Enter invalid email in Contact Us form"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Contact Us Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Expected error message for invalid email in contactUs, but none was displayed. expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Expected error message for invalid email in contactUs, but none was displayed. expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertFalse(Assert.java:79)
+at stepdefinitions.ContactUsSteps.it_should_display_invalid_email_error_message(ContactUsSteps.java:77)
+at ✽.it should display invalid email error message(file:///C:/Users/DELL/eclipse-workspace/EventManagementAutomation/src/test/resources/features/ContactUs.feature:12)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.CucumberTestRunner@55182842]" started-at="2025-07-30T18:37:19 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-30T18:37:19 IST" duration-ms="640" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Submit valid Contact Us form"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Contact Us Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.CucumberTestRunner@55182842]" started-at="2025-07-30T18:37:19 IST" name="tearDownClass" finished-at="2025-07-30T18:37:19 IST" duration-ms="104" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.CucumberTestRunner -->
+    </test> <!-- Cucumber Runner Execution -->
+  </suite> <!-- Sprint2_UIAutomation_Suite -->
+</testng-results>

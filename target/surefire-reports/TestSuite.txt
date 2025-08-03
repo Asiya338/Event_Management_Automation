@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 24.62 s <<< FAILURE! -- in TestSuite
+runner.CucumberTestRunner.runScenario["Enter invalid email in Email ID field", "Booking Functionality"](2) -- Time elapsed: 1.778 s <<< FAILURE!
+java.lang.AssertionError: Expected error message for invalid email in bookingPage, but none was displayed. expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertFalse(Assert.java:79)
+	at stepdefinitions.BookingSteps.should_display_invalid_email_error_message(BookingSteps.java:125)
+	at ✽.should display invalid email error message(file:///C:/Users/DELL/eclipse-workspace/EventManagementAutomation/src/test/resources/features/Booking.feature:17)
+
+runner.CucumberTestRunner.runScenario["Enter non numeric phone number", "Booking Functionality"](3) -- Time elapsed: 1.424 s <<< FAILURE!
+java.lang.AssertionError: Expected error message for non-numeric phone no, but none was displayed. expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertFalse(Assert.java:79)
+	at stepdefinitions.BookingSteps.should_display_invalid_phoneno_error_message(BookingSteps.java:159)
+	at ✽.should display invalid phoneno error message(file:///C:/Users/DELL/eclipse-workspace/EventManagementAutomation/src/test/resources/features/Booking.feature:22)
+
+runner.CucumberTestRunner.runScenario["Enter invalid email in Contact Us form", "Contact Us Functionality"](5) -- Time elapsed: 0.733 s <<< FAILURE!
+java.lang.AssertionError: Expected error message for invalid email in contactUs, but none was displayed. expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertFalse(Assert.java:79)
+	at stepdefinitions.ContactUsSteps.it_should_display_invalid_email_error_message(ContactUsSteps.java:77)
+	at ✽.it should display invalid email error message(file:///C:/Users/DELL/eclipse-workspace/EventManagementAutomation/src/test/resources/features/ContactUs.feature:12)
+

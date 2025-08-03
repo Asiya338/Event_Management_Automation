@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="22.683" tests="6" skipped="0" failures="3" errors="0">
+<testcase classname="Booking Functionality" name="submit Booking form with all fields blank" time="16.234">
+<system-out><![CDATA[
+Given start the chrome browser..............................................passed
+And navigate to Booking page................................................passed
+When enter all fields blank.................................................passed
+And click on book now button................................................passed
+Then it should display error message below all fields.......................passed
+]]></system-out>
+</testcase>
+<testcase classname="Booking Functionality" name="Enter invalid email in Email ID field" time="1.762">
+<failure type="java.lang.AssertionError" message="Expected error message for invalid email in bookingPage, but none was displayed. expected [false] but found [true]">
+<![CDATA[java.lang.AssertionError: Expected error message for invalid email in bookingPage, but none was displayed. expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertFalse(Assert.java:79)
+	at stepdefinitions.BookingSteps.should_display_invalid_email_error_message(BookingSteps.java:125)
+	at ✽.should display invalid email error message(file:///C:/Users/DELL/eclipse-workspace/EventManagementAutomation/src/test/resources/features/Booking.feature:17)
+]]>
+</failure>
+<system-out><![CDATA[
+Given start the chrome browser..............................................passed
+And navigate to Booking page................................................passed
+When enter valid details in all fields and invalid email....................passed
+And click on book now button................................................passed
+Then should display invalid email error message.............................failed
+]]></system-out>
+</testcase>
+<testcase classname="Booking Functionality" name="Enter non numeric phone number" time="1.416">
+<failure type="java.lang.AssertionError" message="Expected error message for non-numeric phone no, but none was displayed. expected [false] but found [true]">
+<![CDATA[java.lang.AssertionError: Expected error message for non-numeric phone no, but none was displayed. expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertFalse(Assert.java:79)
+	at stepdefinitions.BookingSteps.should_display_invalid_phoneno_error_message(BookingSteps.java:159)
+	at ✽.should display invalid phoneno error message(file:///C:/Users/DELL/eclipse-workspace/EventManagementAutomation/src/test/resources/features/Booking.feature:22)
+]]>
+</failure>
+<system-out><![CDATA[
+Given start the chrome browser..............................................passed
+And navigate to Booking page................................................passed
+When enter valid details in all fields and non numeric phone number.........passed
+And click on book now button................................................passed
+Then should display invalid phoneno error message...........................failed
+]]></system-out>
+</testcase>
+<testcase classname="Booking Functionality" name="Submit valid booking details" time="1.605">
+<system-out><![CDATA[
+Given start the chrome browser..............................................passed
+And navigate to Booking page................................................passed
+When enter all valid details to book........................................passed
+And click on book now button................................................passed
+Then should display success message.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Contact Us Functionality" name="Enter invalid email in Contact Us form" time="0.726">
+<failure type="java.lang.AssertionError" message="Expected error message for invalid email in contactUs, but none was displayed. expected [false] but found [true]">
+<![CDATA[java.lang.AssertionError: Expected error message for invalid email in contactUs, but none was displayed. expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertFalse(Assert.java:79)
+	at stepdefinitions.ContactUsSteps.it_should_display_invalid_email_error_message(ContactUsSteps.java:77)
+	at ✽.it should display invalid email error message(file:///C:/Users/DELL/eclipse-workspace/EventManagementAutomation/src/test/resources/features/ContactUs.feature:12)
+]]>
+</failure>
+<system-out><![CDATA[
+Given start chrome browser..................................................passed
+And navigate to ContactUs page..............................................passed
+When enter all valid details and invalid email..............................passed
+And click on send message button............................................passed
+Then it should display invalid email error message..........................failed
+]]></system-out>
+</testcase>
+<testcase classname="Contact Us Functionality" name="Submit valid Contact Us form" time="0.632">
+<system-out><![CDATA[
+Given start chrome browser..................................................passed
+And navigate to ContactUs page..............................................passed
+When enter all valid details................................................passed
+And click on send message button............................................passed
+Then it should display success message......................................passed
+]]></system-out>
+</testcase>
+</testsuite>
